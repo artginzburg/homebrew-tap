@@ -3,7 +3,7 @@
 
 # Install
 
-After [Homebrew](https://brew.sh) installation, run the following command:
+After [Homebrew](//brew.sh) installation, run the following command:
 
 ```powershell
 brew tap dafuqtor/tap

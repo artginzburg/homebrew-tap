@@ -10,4 +10,11 @@ cask 'localswitch' do
   auto_updates true
 
   app 'LocalSwitch.app'
+
+  uninstall login_item: 'LocalSwitch',
+            quit:       'com.dafuqtor.LocalSwitch'
+
+  zap trash: [
+               '~/Library/Preferences/com.dafuqtor.LocalSwitch.plist'
+             ]
 end
