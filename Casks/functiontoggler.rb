@@ -12,5 +12,5 @@ cask 'functiontoggler' do
   app 'Function Toggler.app'
   service 'Function Toggler.workflow'
 
-  zap trash: '~/Library/Caches/com.dafuqtor.FunctionToggler'
+  uninstall trash: '~/Library/Caches/com.dafuqtor.FunctionToggler'
 end

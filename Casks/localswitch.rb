@@ -12,7 +12,6 @@ cask 'localswitch' do
   app 'LocalSwitch.app'
 
   uninstall login_item: 'LocalSwitch',
-            quit:       'com.dafuqtor.LocalSwitch'
-
-  zap trash: '~/Library/Preferences/com.dafuqtor.LocalSwitch.plist'
+            quit:       'com.dafuqtor.LocalSwitch',
+            trash:      '~/Library/Preferences/com.dafuqtor.LocalSwitch.plist'
 end
