@@ -1,6 +1,6 @@
 cask 'midclick' do
   version '1.1'
-  sha256 '74533304ec68f8e6c716a4b7c3ad6ed34d985b88c66eee7e43cce22883dee08e'
+  sha256 'a83a329493b9140cb73b418ddfa2e921555fc7706a11d8ec2ba13c4016392aca'
 
   # github.com was verified as official when first introduced to the cask
   url "https://github.com/cl3m/MiddleClick/releases/download/mojave/MiddleClick_Mojave.zip"
