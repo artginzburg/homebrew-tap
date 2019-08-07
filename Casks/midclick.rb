@@ -1,12 +1,12 @@
 cask 'midclick' do
-  version '1.1'
-  sha256 '56eee6b0dec04ed4b1789c510d97db486d53035581473ce1926e878ae481e02f'
+  version '1.2'
+  sha256 '911f5780b5ccd2185e23e4a6921bcfd90ad5448f8843301a012a1ef0d678bb17'
 
   # github.com was verified as official when first introduced to the cask
   url "https://github.com/DaFuqtor/MiddleClick/releases/download/#{version}/MiddleClick.app.zip"
-  appcast 'https://github.com/cl3m/MiddleClick/releases.atom'
+  appcast 'https://github.com/DaFuqtor/MiddleClick/releases.atom'
   name 'MiddleClick'
-  homepage 'https://github.com/cl3m/MiddleClick'
+  homepage 'https://github.com/DaFuqtor/MiddleClick'
 
   app 'MiddleClick.app'
 
