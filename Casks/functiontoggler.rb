@@ -7,8 +7,6 @@ cask 'functiontoggler' do
   name 'Function Toggler'
   homepage 'https://github.com/DaFuqtor/FunctionToggler'
 
-  auto_updates true
-
   app 'Function Toggler.app'
   service 'Function Toggler.workflow'
 

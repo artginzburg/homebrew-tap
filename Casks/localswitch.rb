@@ -7,8 +7,6 @@ cask 'localswitch' do
   name 'LocalSwitch'
   homepage 'https://git.io/localswitch'
 
-  auto_updates true
-
   app 'LocalSwitch.app'
 
   uninstall login_item: 'LocalSwitch',
