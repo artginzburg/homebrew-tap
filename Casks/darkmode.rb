@@ -1,6 +1,6 @@
 cask 'darkmode' do
   version '1.0'
-  sha256 'a25ba1444c122a2044f8617b80132a1602435e733fc71534d2fa2ab255ba1f49'
+  sha256 '8cceb0f17b45438d0209bc9a453e6869300a6272545f0db3419692629e371f9f'
 
   url "https://github.com/DaFuqtor/DarkMode/releases/download/#{version}/DarkMode.zip"
   appcast 'https://github.com/DaFuqtor/DarkMode/releases.atom'
