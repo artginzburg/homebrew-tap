@@ -1,6 +1,6 @@
 cask 'localswitch' do
-  version '2.4.2'
-  sha256 '119b22e67a6d0bd6fd9b235f6f7fda348275604ee9e4efa8a13a80b42b1ec535'
+  version '2.4.3'
+  sha256 '6ad10c89e9ece54ff5ed81cc018c2454d93ddc949f7da8b249da41cbcc89ae10'
 
   url "https://github.com/DaFuqtor/LocalSwitch/releases/download/#{version}/LocalSwitch.zip"
   appcast 'https://github.com/DaFuqtor/LocalSwitch/releases.atom'
