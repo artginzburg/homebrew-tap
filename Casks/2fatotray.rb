@@ -4,7 +4,7 @@ cask '2fatotray' do
 
   url "https://github.com/DaFuqtor/2FAtoTray/releases/download/#{version}/2FAtoTray.zip"
   appcast 'https://github.com/DaFuqtor/2FAtoTray/releases.atom'
-  name '2FAtoTray'
+  name '2FA to Tray'
   homepage 'https://github.com/DaFuqtor/2FAtoTray'
 
   app '2FA to Tray.app'
