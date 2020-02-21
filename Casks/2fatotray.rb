@@ -1,6 +1,6 @@
 cask '2fatotray' do
-  version '1.4.3'
-  sha256 '9b9934ac4e2990216a46fa196eb51909619a514594deb98349d418996c0e9276'
+  version '1.4.5'
+  sha256 'cc966509867d414899ca89b0f916a492020947ee10ca60dcac63033bcd88cd5e'
 
   url "https://github.com/DaFuqtor/2FAtoTray/releases/download/#{version}/2FAtoTray.zip"
   appcast 'https://github.com/DaFuqtor/2FAtoTray/releases.atom'
