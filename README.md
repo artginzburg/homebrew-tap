@@ -6,7 +6,7 @@
 After [Homebrew](//brew.sh) installation, run the following command:
 
 ```powershell
-brew tap dafuqtor/tap
+brew tap artginzburg/tap
 ```
 
 ## Usage
