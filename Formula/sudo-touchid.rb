@@ -9,8 +9,7 @@ class SudoTouchid < Formula
     bin.install "sudo-touchid.sh" => "sudo-touchid"
   end
 
-  plist_options manual: "sudo brew services start sudo-touchid"
-
+  plist_options :startup => true
   def plist
     <<~EOS
       <?xml version="1.0" encoding="UTF-8"?>
