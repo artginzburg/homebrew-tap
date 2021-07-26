@@ -11,4 +11,8 @@ cask 'functiontoggler' do
   service 'Function Toggler.workflow'
 
   uninstall trash: '~/Library/Caches/com.dafuqtor.FunctionToggler'
+  
+  caveats do
+    discontinued
+  end
 end
