@@ -12,4 +12,8 @@ cask '2fatotray' do
   uninstall login_item: '2FA to Tray'
 
   zap trash: '~/Library/Preferences/com.dafuqtor.2FAtoTray.plist'
+  
+  caveats do
+    discontinued
+  end
 end
