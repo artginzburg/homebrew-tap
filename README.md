@@ -1,9 +1,13 @@
-<h1 align="center">homebrew-tap</h1>
-<p align="center">my coolest Apps and Command Line tools</p>
+<div align="center">
 
-# Install
+# [homebrew][brew]-[tap][tapDocs]
+my coolest [Apps][apps] and [Tools][tools]
 
-After [Homebrew](//brew.sh) installation, run the following command:
+</div>
+
+## Install
+
+Run the following command: <sup><code>with [Homebrew][brew] installed</code></sup>
 
 ```powershell
 brew tap artginzburg/tap
@@ -11,8 +15,19 @@ brew tap artginzburg/tap
 
 ## Usage
 
-> Now you can install any of my Casks and Formulas
+> Install any of my Casks and Formulas
 
 ```powershell
-brew [cask] install <name>
+brew install [--cask] <name>
 ```
+
+> List all of my Formulas
+
+```powershell
+brew search artginzburg
+```
+
+[brew]: https://brew.sh
+[tapDocs]: https://docs.brew.sh/Taps
+[apps]: https://github.com/artginzburg/homebrew-tap/tree/main/Casks
+[tools]: https://github.com/artginzburg/homebrew-tap/tree/main/Formula
