@@ -1,5 +1,5 @@
 class SudoTouchid < Formula
-  desc "Automate adding TouchID as sufficient sudo auth method"
+  desc "Permanent TouchID support for sudo"
   homepage "https://github.com/artginzburg/sudo-touchid"
   url "https://github.com/artginzburg/sudo-touchid/archive/0.1.tar.gz"
   head "https://github.com/artginzburg/sudo-touchid.git"
