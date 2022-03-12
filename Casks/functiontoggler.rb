@@ -1,18 +1,14 @@
 cask 'functiontoggler' do
-  version '1.0'
-  sha256 '8c0ebe62b1298d50a791b1bde6bfc6fe3be2bc0716f229f749c50503bca2ca5b'
+  version '1.1'
+  sha256 '91cdfffa77f22cea3a3cc55bbf589b83f36ce40aa74d9b56fa4d80657b975406'
 
-  url "https://github.com/DaFuqtor/FunctionToggler/releases/download/#{version}/FunctionToggler.zip"
-  appcast 'https://github.com/DaFuqtor/FunctionToggler/releases.atom'
+  url "https://github.com/artginzburg/FunctionToggler/releases/download/#{version}/FunctionToggler.zip"
   name 'Function Toggler'
-  homepage 'https://github.com/DaFuqtor/FunctionToggler'
+  desc 'Quickly toggle the `fn` key behavior on macOS'
+  homepage 'https://github.com/artginzburg/FunctionToggler'
 
   app 'Function Toggler.app'
   service 'Function Toggler.workflow'
 
-  uninstall trash: '~/Library/Caches/com.dafuqtor.FunctionToggler'
-  
-  caveats do
-    discontinued
-  end
+  uninstall trash: '~/Library/Caches/org.artginzburg.FunctionToggler'
 end
