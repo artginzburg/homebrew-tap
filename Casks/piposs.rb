@@ -1,6 +1,6 @@
 cask 'piposs' do
-  version '1.0'
-  sha256 '7030fbb6715d34f95cd8c59fd995ddcb6a256a39f7258f3c1ed5adf8c2dfe022'
+  version '1.0.1'
+  sha256 'e4f8759a4fa662f3aa4f18c39463e68c46e634456c8593cfa37e51b5a9c7d18b'
 
   url "https://github.com/artginzburg/PiPOSS/releases/download/#{version}/PiPOSS.zip"
   name 'PiPOSS'
