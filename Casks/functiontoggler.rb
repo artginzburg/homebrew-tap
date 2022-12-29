@@ -1,6 +1,6 @@
 cask 'functiontoggler' do
-  version '1.1'
-  sha256 '788159752df9e781b5c119ab3d45713463bc3eb26da3c3ef1e64b2bb486875b4'
+  version '1.2'
+  sha256 'ef2b7d8f2e281f22229de21827fa8513e0c22a845e7c3e3cedad09e78cfa7b9a'
 
   url "https://github.com/artginzburg/FunctionToggler/releases/download/#{version}/FunctionToggler.zip"
   name 'Function Toggler'
