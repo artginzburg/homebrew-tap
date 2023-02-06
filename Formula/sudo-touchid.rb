@@ -10,9 +10,8 @@ class SudoTouchid < Formula
     bin.install "sudo-touchid.sh" => "sudo-touchid"
   end
 
-  plist_options startup: true
-
   service do
-    run [bin/"sudo-touchid"]
+    run bin/"sudo-touchid"
+    require_root true
   end
 end
