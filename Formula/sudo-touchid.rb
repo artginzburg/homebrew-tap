@@ -6,12 +6,6 @@ class SudoTouchid < Formula
   license "EPL-2.0"
   head "https://github.com/artginzburg/sudo-touchid.git", branch: "main"
 
-  # Automate version detection for releases
-  livecheck do
-    url :stable
-    regex(%r{releases/download/(\d+\.\d+)/sudo-touchid\.sh}i)
-  end
-
   # Restrict to macOS since TouchID is macOS-specific
   depends_on :macos
   # Optional: Specify minimum macOS version if known (e.g., 10.12.2 for TouchID)
