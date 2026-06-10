@@ -6,11 +6,13 @@ class SudoTouchid < Formula
   license "EPL-2.0"
   head "https://github.com/artginzburg/sudo-touchid.git", branch: "main"
 
-  # Restrict to macOS since TouchID is macOS-specific
-  depends_on :macos
-  # Optional: Specify minimum macOS version if known (e.g., 10.12.2 for TouchID)
-  depends_on macos: :catalina
-
+  on_macos do
+    # Restrict to macOS since TouchID is macOS-specific
+    depends_on :macos
+    # Optional: Specify minimum macOS version if known (e.g., 10.12.2 for TouchID)
+    depends_on macos: :catalina
+  end
+  
   def install
     # Ensure the script is executable and renamed
     bin.install "sudo-touchid.sh" => "sudo-touchid"
