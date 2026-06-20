@@ -7,7 +7,7 @@ cask "piposs" do
   desc "Brings Picture in Picture shortcut and custom button to any video"
   homepage "https://github.com/artginzburg/PiPOSS"
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "PiPOSS.app"
 
