@@ -1,6 +1,6 @@
 cask "wheelclick" do
-  version "1.0.0"
-  sha256 "b702aa58b85c3b5b405f4a7e9c407339b3d436e9fbf9f35a6dd7ac88b8220186"
+  version "1.0.1"
+  sha256 "14aa76468f567f0917cd48c3acf09da426a962abcd215bdeee29580268e4c9bc"
 
   url "https://github.com/artginzburg/WheelClick-Community/releases/download/v#{version}/WheelClick.dmg",
       verified: "github.com/artginzburg/WheelClick-Community/"
