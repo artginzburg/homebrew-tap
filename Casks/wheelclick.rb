@@ -8,7 +8,7 @@ cask "wheelclick" do
   desc "Middle click for the trackpad and Magic Mouse — successor to MiddleClick"
   homepage "https://wheelclick.app/"
 
-  depends_on macos: :tahoe
+  depends_on macos: :ventura
 
   app "WheelClick.app"
 
