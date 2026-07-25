@@ -1,11 +1,11 @@
 cask "wheelclick" do
-  version "1.0.1"
-  sha256 "14aa76468f567f0917cd48c3acf09da426a962abcd215bdeee29580268e4c9bc"
+  version "1.0.2"
+  sha256 "4d61f6085a6dfd3c37ee7ad700aa1ca9353e312607baff34eacdda5bcc79c3e7"
 
   url "https://github.com/artginzburg/WheelClick-Community/releases/download/v#{version}/WheelClick.dmg",
       verified: "github.com/artginzburg/WheelClick-Community/"
   name "WheelClick"
-  desc "Middle click for the trackpad and Magic Mouse — successor to MiddleClick"
+  desc "Free three-finger middle click, with paid Magic Mouse and drag gestures"
   homepage "https://wheelclick.app/"
 
   depends_on macos: :ventura
