@@ -17,8 +17,9 @@ cask "wheelclick" do
   # keep installing over the other, and Acceptable Casks asks for the stanza on
   # any cask whose app self-updates. The version above still matters — it is
   # what new installs get, and what `brew upgrade --greedy` compares against.
+  # No blank line before depends_on: `brew style` groups the two stanzas
+  # together and fails this tap's CI over the gap (Cask/StanzaGrouping).
   auto_updates true
-
   depends_on macos: :ventura
 
   app "WheelClick.app"
