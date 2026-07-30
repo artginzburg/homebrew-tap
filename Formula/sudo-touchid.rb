@@ -14,7 +14,9 @@ class SudoTouchid < Formula
     # The service re-applies the PAM config at boot. Only needed on macOS 13
     # and below, where system updates overwrite /etc/pam.d/sudo. On Sonoma+
     # the config lives in /etc/pam.d/sudo_local and survives updates.
-    if MacOS.version <= :ventura
+    # defined? guard: `brew readall --os=all` replays this block on Linux,
+    # where the MacOS constant does not exist.
+    if defined?(MacOS) && MacOS.version <= :ventura
       service do
         run [opt_bin/"sudo-touchid"]
         require_root true
