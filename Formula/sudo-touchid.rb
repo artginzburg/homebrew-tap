@@ -10,6 +10,18 @@ class SudoTouchid < Formula
   depends_on :macos
   on_macos do
     depends_on macos: :catalina
+
+    # The service re-applies the PAM config at boot. Only needed on macOS 13
+    # and below, where system updates overwrite /etc/pam.d/sudo. On Sonoma+
+    # the config lives in /etc/pam.d/sudo_local and survives updates.
+    if MacOS.version <= :ventura
+      service do
+        run [opt_bin/"sudo-touchid"]
+        require_root true
+        log_path "/var/log/sudo-touchid.log" # Optional: Log output
+        error_log_path "/var/log/sudo-touchid.error.log" # Optional: Error log
+      end
+    end
   end
 
   def install
@@ -17,13 +29,6 @@ class SudoTouchid < Formula
     bin.install "sudo-touchid.sh" => "sudo-touchid"
     # Explicitly set executable permissions (optional but good practice)
     chmod 0555, bin/"sudo-touchid"
-  end
-
-  service do
-    run [opt_bin/"sudo-touchid"]
-    require_root true
-    log_path "/var/log/sudo-touchid.log" # Optional: Log output
-    error_log_path "/var/log/sudo-touchid.error.log" # Optional: Error log
   end
 
   test do
