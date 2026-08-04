@@ -1,6 +1,6 @@
 cask "wheelclick" do
-  version "1.0.3"
-  sha256 "f30ba91f1668aea6b20e2326f613648ddeab002a0df01e9cd9624b58be5bdb17"
+  version "1.0.4"
+  sha256 "3adea9a53511dcbe3e60aa05d43f94d64d760ba2b80b2079e3d010b40b06bfcc"
 
   # Byte-identical to WheelClick.dmg on the same release (same sha256); it is a
   # second copy under a second name purely so GitHub's per-asset download
@@ -18,7 +18,7 @@ cask "wheelclick" do
   # any cask whose app self-updates. The version above still matters — it is
   # what new installs get, and what `brew upgrade --greedy` compares against.
   # No blank line before depends_on: `brew style` groups the two stanzas
-  # together and fails this tap's CI over the gap (Cask/StanzaGrouping).
+  # together and fails the tap's CI over the gap (Cask/StanzaGrouping).
   auto_updates true
   depends_on macos: :ventura
 
