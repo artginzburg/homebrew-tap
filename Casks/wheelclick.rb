@@ -1,6 +1,6 @@
 cask "wheelclick" do
-  version "1.0.4"
-  sha256 "3adea9a53511dcbe3e60aa05d43f94d64d760ba2b80b2079e3d010b40b06bfcc"
+  version "1.0.5"
+  sha256 "3e9509c3f997e34206ca8587d1cf3c03dc7876780d931898e5fe80b8eda7d115"
 
   # Byte-identical to WheelClick.dmg on the same release (same sha256); it is a
   # second copy under a second name purely so GitHub's per-asset download
