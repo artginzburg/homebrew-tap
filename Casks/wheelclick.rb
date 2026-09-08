@@ -6,8 +6,7 @@ cask "wheelclick" do
   # second copy under a second name purely so GitHub's per-asset download
   # counter separates brew installs from direct downloads. See
   # scripts/publish-direct.sh.
-  url "https://github.com/artginzburg/WheelClick-Community/releases/download/v#{version}/WheelClick-homebrew.dmg",
-      verified: "github.com/artginzburg/WheelClick-Community/"
+  url "https://github.com/artginzburg/WheelClick-Community/releases/download/v#{version}/WheelClick-homebrew.dmg"
   name "WheelClick"
   desc "Free three-finger middle click, with paid Magic Mouse and drag gestures"
   homepage "https://wheelclick.app/"

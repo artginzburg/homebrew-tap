@@ -6,11 +6,12 @@ class SudoTouchid < Formula
   license "EPL-2.0"
   head "https://github.com/artginzburg/sudo-touchid.git", branch: "main"
 
-  # Restrict to macOS (TouchID is macOS-specific); minimum: Catalina.
+  # No version floor: pam_tid.so has been in macOS since Sierra, and the
+  # only people a floor could stop are Catalina users on an older brew —
+  # exactly the ones who would silently lose the formula. New brew refuses
+  # Catalina by itself (HOMEBREW_MACOS_OLDEST_ALLOWED is 11 on main).
   depends_on :macos
   on_macos do
-    depends_on macos: :catalina
-
     # The service re-applies the PAM config at boot. Only needed on macOS 13
     # and below, where system updates overwrite /etc/pam.d/sudo. On Sonoma+
     # the config lives in /etc/pam.d/sudo_local and survives updates.
