@@ -7,7 +7,7 @@ cask "piposs" do
   desc "Picture in Picture for any Safari video, by hotkey or toolbar button"
   homepage "https://github.com/artginzburg/PiPOSS"
 
-  depends_on macos: :big_sur
+  depends_on :macos
 
   app "PiPOSS.app"
 
