@@ -10,4 +10,10 @@ class WifiPass < Formula
   def install
     bin.install "wifi-pass.sh" => "wifi-pass"
   end
+
+  test do
+    # Reading a password needs a Wi-Fi connection and a Keychain prompt, so
+    # the test stops at the install itself.
+    assert_predicate bin/"wifi-pass", :executable?
+  end
 end
