@@ -1,6 +1,6 @@
 cask "wheelclick" do
-  version "1.1.9"
-  sha256 "e70d0885154a8ef7f667028f37aedb2ec670f30fbbd5a367e25b5b13749f78a5"
+  version "1.1.10"
+  sha256 "87a47b14b27aba1cd3512e6ededfee5ade8741acf9c957f5a74f48613a057864"
 
   # Byte-identical to WheelClick.dmg on the same release (same sha256); it is a
   # second copy under a second name purely so GitHub's per-asset download
@@ -19,7 +19,7 @@ cask "wheelclick" do
   # No blank line before depends_on: `brew style` groups the two stanzas
   # together and fails the tap's CI over the gap (Cask/StanzaGrouping).
   auto_updates true
-  depends_on macos: :ventura
+  depends_on macos: :monterey
 
   app "WheelClick.app"
 
